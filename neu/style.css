@@ -1,0 +1,117 @@
+/* Reset */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    height:100%;
+}
+
+.slides
+{
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    background: black; /* Hintergrund für Balken */
+}
+
+.slide img
+{
+    display:none;
+}
+
+.slide
+{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+}
+
+.slide:nth-child(1)
+{
+    background-image: url("img/Rot2.png");
+}
+
+.slide:nth-child(2)
+{
+    background-image: url("img/grun.png");
+}
+
+.slide:nth-child(3)
+{
+    background-image: url("img/Gelb2.png");
+}
+.slide:nth-child(4)
+{
+    background-image: url("img/Orange2.png");
+}
+
+.slide:nth-child(5)
+{
+    background-image: url("img/Gelb2.png");
+}
+
+.slide:nth-child(6)
+{
+    background-image: url("img/Rosa2.png");
+}
+.slide:nth-child(7)
+{
+    background-image: url("img/Rot2.png");
+}
+
+.slide:nth-child(8)
+{
+    background-image: url("img/Rot2.png");
+}
+
+.slide:nth-child(9)
+{
+    background-image: url("img/Rot2.png");
+}
+.slide:nth-child(10)
+{
+    background-image: url("img/Orange2.png");
+}
+
+.slide:nth-child(11)
+{
+    background-image: url("img/Gelb2.png");
+}
+
+
+ 
+.slide-title
+{
+    font-size: 3rem;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #BC0000;
+}
+
+.slide-text
+{
+    font-size: 1.3rem;
+    font-family: Gloria Hallelujah;
+    max-width: 700px;
+}
+
+.text-red{ color:#BC0000; }
+.text-black{ color:black; }
