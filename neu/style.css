@@ -1,5 +1,4 @@
-/* Reset */
-*
+ *
 {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@ html, body
     background: black; /* Hintergrund für Balken */
 }
 
-.slide img
+.slide img .BG_Pic
 {
     display:none;
 }
@@ -41,6 +40,13 @@ html, body
     background-position:center;
     background-repeat:no-repeat;
     position:relative;
+}
+
+.slide-title
+{
+    position: absolute;
+    left: 10%;
+    top: 7%;
 }
 
 .slide:nth-child(1)
@@ -99,7 +105,7 @@ html, body
  
 .slide-title
 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Brush Script MT', cursive;
     font-weight: bold;
     margin-bottom: 20px;
@@ -108,10 +114,125 @@ html, body
 
 .slide-text
 {
-    font-size: 1.3rem;
+    text-align: left;
+    font-size: 1.5rem;
     font-family: Gloria Hallelujah;
     max-width: 700px;
+    font-weight: bold;
 }
 
-.text-red{ color:#BC0000; }
-.text-black{ color:black; }
+#T1
+{
+    position: absolute;
+    width: 40%;
+    left: 10%;
+    top: 20%;
+}
+
+#T2
+{
+    position: absolute;
+    left: 33%;
+    bottom: 15%;
+}
+
+.infobit
+{
+    padding-top: 30%;
+    padding-left: 20%;
+    position:absolute;
+    bottom: 30%;
+    left: 0%;
+    z-index:5;
+    animation: sway 3s ease-in-out infinite alternate;
+}
+
+.cpu_ripped
+{
+    width: 400px;
+    height: 433px;
+    position:absolute;
+    top: 10%;
+    right: 2%;
+    z-index:5;
+    animation: sway 3s ease-in-out infinite alternate;
+}
+
+.text-red
+{
+    color:#BC0000;
+}
+
+.text-black
+{
+    color:black;
+}
+
+
+/*Animations*/
+@keyframes sway
+{
+    from
+    {
+        transform: rotateZ(5deg);
+    }
+    to
+    {
+        transform: rotateZ(-5deg);
+    }
+}
+
+
+/*Moblie view*/
+
+@media (max-width: 768px){
+
+    .slide-title
+    {
+        font-size: 2rem;
+        left: 5%;
+        top: 8%;
+    }
+
+    .slide-text
+    {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    #T1
+    {
+        width: 85%;
+        left: 7%;
+        top: 18%;
+    }
+
+    #T2
+    {
+        left: 10%;
+        bottom: 35%;
+    }
+
+    .cpu_ripped
+    {
+        width: 180px;
+        height: auto;
+        top: 35%;
+        right: 25%;
+    }
+
+    .infobit
+    {
+        width: 40%;
+        bottom: 20%;
+        left: 5%;
+    }
+
+    .text-red
+    {
+        color:black;
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+    }
+}
