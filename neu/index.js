@@ -10,3 +10,8 @@ document.addEventListener("keydown", function(event)
         });
     }
 });
+
+function Skip_to_end()
+{
+    document.querySelector('.slides').scrollTo({ top: document.querySelector('.slides').scrollHeight, behavior: 'smooth' })
+}
