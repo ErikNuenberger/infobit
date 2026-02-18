@@ -4,12 +4,24 @@ document.addEventListener("keydown", function(event)
     {
         const container = document.querySelector(".slides");
 
-        container.scrollBy({
-            top: container.clientHeight,
-            behavior: "smooth"
-        });
+        container.scrollBy({left: window.innerWidth, behavior:"smooth"});
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slider = document.querySelector(".slides");
+
+    window.addEventListener("wheel", (e)=>{
+        if(Math.abs(e.deltaY) > Math.abs(e.deltaX)){
+            e.preventDefault();
+            slider.scrollBy({
+                left: e.deltaY,
+                behavior: "smooth"
+            });
+        }
+    }, { passive:false });
+});
+
 
 function Skip_to_end()
 {

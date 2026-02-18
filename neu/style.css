@@ -3,20 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html, body
 {
     height:100%;
+    ::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .slides
 {
+    width: 100vw;
     height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-    background: black; /* Hintergrund für Balken */
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    background: black;
+    overscroll-behavior: contain;
 }
 
 .slide img .BG_Pic
@@ -31,6 +38,7 @@ html, body
     scroll-snap-align: start;
 
     display:flex;
+    flex-shrink:0;
     flex-direction:column;
     justify-content:center;
     align-items:center;
@@ -252,6 +260,15 @@ html, body
     opacity: 1;
 }
 
+#T18
+{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: #BC0000;
+    transform: rotate(5deg);
+}
+
 
 
 
@@ -427,6 +444,131 @@ html, body
     transform: rotate(45deg);
     transition: transform 1.5s ease, right 1.5s ease;
     cursor: pointer;
+}
+
+#virus
+{
+    position: absolute;
+    width: 400px;
+    bottom: 10%;
+    left: 10%;
+    animation: move_from_to 2s ease-in-out infinite alternate;
+}
+
+#virus2
+{
+    position: absolute;
+    width: 400px;
+    bottom: 15%;
+    left: 15%;
+}
+
+#dragon
+{
+    position: absolute;
+    z-index: 4;
+    width: 500px;
+    top: 25%;
+    right: 8%;
+    animation: sway 3s ease-in-out infinite alternate;
+}
+
+.mo-fire
+{
+    transform: rotate(-100deg) translateX(-48rem) scale(2.2);
+    z-index: 5;
+    padding-right: 0;
+    width: 30%;
+    height: 25%;
+    position: absolute;
+    bottom: 105%;
+    left: 30%;
+}
+
+.flame
+{
+    animation-name: flamefly;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    transform-origin: 50% 50% 0;
+}
+
+
+.flame.one
+{
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+.flame3.two
+{
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.flame-main
+{
+    animation-name: flameWobble;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.flame-main.one
+{
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.flame-main.two
+{
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.flame-main.three
+{
+    animation-duration: 2.1s;
+    animation-delay: 3s;
+}
+
+.flame-main.four
+{
+    animation-duration: 3.2s;
+    animation-delay: 4s;
+}
+
+.flame-main.five
+{
+    animation-duration: 2.5s;
+    animation-delay: 5s;
+}
+
+@keyframes flameWobble
+{
+    50%
+    {
+        transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+    }
+}
+
+@keyframes flamefly
+{
+    0%
+    {
+        transform: translate(0) rotate(180deg);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translate(-20px, -100px) rotate(180deg);
+        opacity: 0;
+    }
 }
 
 
@@ -649,6 +791,31 @@ html, body
     }
 }
 
+
+@keyframes move_from_to
+{
+    from
+    {
+        transform: translateX(100%);
+    }
+    to
+    {
+        transform: translate(-10%);
+    }
+}
+
+@keyframes move_from_to2
+{
+    from
+    {
+        transform: translateX(60%);
+    }
+    to
+    {
+        transform: translate(-10%);
+    }
+}
+
 #letter.fly
 {
     right: 65%;
@@ -815,6 +982,15 @@ html, body
         opacity: 0;
         transition: opacity 1s ease;
     }
+    #T18
+    {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        max-width: 80%;
+        color: #BC0000;
+        transform: rotate(5deg);
+    }
 
     #T17.show
     {
@@ -913,6 +1089,55 @@ html, body
     {
         color:black;
     }
+
+    #virus
+    {
+        position: absolute;
+        width: 150px;
+        bottom: 45%;
+        left: 5%;
+        animation: move_from_to2 2s ease-in-out infinite alternate;
+    }
+
+    #virus2
+    {
+        position: absolute;
+        width: 150px;
+        bottom: 45%;
+        left: 5%;
+    }
+
+    #dragon
+    {
+        position: absolute;
+        width: 180px;
+        top: 35%;
+        right: 5%;
+        animation: sway 3s ease-in-out infinite alternate;
+    }
+
+    .mo-fire
+    {
+        transform: rotate(-100deg) translateX(-48rem) scale(0.8);
+        z-index: 5;
+        padding-right: 0;
+        width: 30%;
+        height: 25%;
+        position: absolute;
+        bottom: 122%;
+        left: -5%;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     #skipBtn
     {
