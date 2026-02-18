@@ -219,7 +219,38 @@ html, body
     top: 12%;
     left: 32%;
 }
+#T15
+{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: rotate(-5deg);
+    max-width: 30%;
+}
 
+#T16
+{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    transform: rotate(5deg);
+
+}
+
+#T17
+{
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    max-width: 30%;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#T17.show
+{
+    opacity: 1;
+}
 
 
 
@@ -368,6 +399,36 @@ html, body
     z-index: 5;
     animation: sway_plane 1.2s ease-in-out infinite alternate;
 }
+
+#plane_static
+{
+    position: absolute;
+    width: 450px;
+    bottom: 15%;
+    left: 0%;
+    z-index: 5;
+    transform: rotate(-10deg);
+}
+
+#Server_as_RippedPaper
+{
+    position: absolute;
+    width: 350px;
+    top: 30%;
+    right: 5%;
+}
+
+#letter
+{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    width: 120px;
+    transform: rotate(45deg);
+    transition: transform 1.5s ease, right 1.5s ease;
+    cursor: pointer;
+}
+
 
 
 
@@ -588,6 +649,12 @@ html, body
     }
 }
 
+#letter.fly
+{
+    right: 65%;
+    transform: rotate(45deg) translateX(-250px, 200px);
+}
+
 
 
 
@@ -719,6 +786,69 @@ html, body
         left: 5%;
     }
 
+
+    #T15
+    {
+        position: absolute;
+        top: 22%;
+        left: 10%;
+        transform: rotate(-5deg);
+        max-width: 80%;
+    }
+
+    #T16
+    {
+        color: #BC0000;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        transform: rotate(5deg);
+        max-width: 30%;
+    }
+
+    #T17
+    {
+        position: absolute;
+        top: 65%;
+        left: 10%;
+        max-width: 80%;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    #T17.show
+    {
+        opacity: 1;
+    }
+    
+    #plane_static
+    {
+        position: absolute;
+        width: 200px;
+        bottom: 40%;
+        left: 0%;
+        z-index: 5;
+        transform: rotate(-10deg);
+    }
+
+    #Server_as_RippedPaper
+    {
+        position: absolute;
+        width: 150px;
+        top: 45%;
+        right: 5%;
+    }
+
+    #letter
+    {
+        position: absolute;
+        top: 40%;
+        right: 15%;
+        width: 80px;
+        transform: rotate(45deg);
+        transition: transform 1.5s ease, right 1.5s ease;
+        cursor: pointer;
+    }
 
 
 
@@ -987,6 +1117,12 @@ html, body
         left: -2%;
         z-index: 5;
         animation: sway_plane 1.2s ease-in-out infinite alternate;
+    }
+
+    #letter.fly
+    {
+        right: 65%;
+        transform: rotate(45deg) translateX(-200px, 200px);
     }
 
 }

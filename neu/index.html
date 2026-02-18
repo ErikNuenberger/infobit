@@ -152,17 +152,21 @@
         <div  class="slide">
             <h1 class="slide-title">Der Server</h1>
 
-            <p class="slide-text text-red">
+            <p class="slide-text text-red" id="T15">
                 Jeder PC, so auch ein Server hat unzählige sogenannte Ports. Jeder Port stellt andere Daten bereit, so sind beim Webserver auf Port 80 Daten für die Internetseite.
             </p>
 
-            <p class="slide-text text-red">
+            <p class="slide-text text-red" id="T16">
                 Info: Klick auf den Brief zum Datenübertragen!
             </p>
 
-            <p class="slide-text text-black">
+            <p class="slide-text text-black" id="T17">
                 Nachdem sich das Infobit die Daten geholt hat, fliegt es wieder den Weg durchs Internet zurück zum Infoteam-Netzwerk.
             </p>
+
+            <img src="fig\Server_as_RippedPaper.png" id="Server_as_RippedPaper">
+            <img src="fig\envelope.png" id="letter" onclick="this.classList.add('fly'); document.getElementById('T17').classList.add('show');">
+            <img src="fig\Flugzeug.png" id="plane_static">
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img class="BG_Pic">
         </div>
