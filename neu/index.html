@@ -31,7 +31,32 @@
                 <div class="info-box">
                     <button class="info-btn">?</button>
                     <div class="info-popup">
-                        <p>Hier stehen Infos zu dieser Folie.</p>
+                        <p>
+                            Die Reise beginnt: Der PC packt aus.
+                            <br>
+                            <br>
+                            Status: Paketbau im Browser (CPU)
+                            Ziel: infoteam.de (HTTP-Request)
+                            Layer: 7 bis 1 (Der volle Stack)
+                            <br>
+                            Was passiert gerade?
+                            <br>
+                            Deine Anfrage wird wie ein Brief mehrfach
+                            eingetütet (Encapsulation). Jede Schicht
+                            fügt wichtige Steuerinfos (Header) hinzu.
+                            Die Header-Etappen:
+                            L7 (HTTP): "Gib mir die Webseite!"
+                            L4 (TCP): Port 443 & Sendekontrolle.
+                            L3 (IP): Ziel-IP vom DNs-Server &
+                            deine Quell-IP werden aufgeklebt.
+                            L2 (MAC): Die Hardware-Adresse des
+                            Gateways (Router) wird adressiert.
+                            L1 (Bit): Umwandlung in Stromsignale.
+                            Der Weg zum Switch:
+                            Dein PC schickt die Bits zum Switch. Dieser
+                            liest nur Layer 2, erkennt die MAC deines
+                            Routers und leitet das Signal sofort weiter.
+                        </p>
                     </div>
                 </div>
 
@@ -76,7 +101,29 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: Namensauflösung läuft...
+                        <br>
+                        Protokoll: DNS (über UDP)
+                        Layer: 7 bis 2
+                        <br>
+                        Was passiert gerade?
+                        Dein PC kennt nur den Namen der Seite,
+                        nicht die IP. Er schickt eine Anfrage:
+                        "Welche IP gehört zu infoteam.de?"
+                        <br>
+                        Der Weg über den Switch:
+                        Der Switch arbeitet auf Layer 2.
+                        Er liest die MAC-Zieladresse und weiß:
+                        "Dieses Paket muss zum Router!"
+                        Er leitet die Bits blitzschnell weiter,
+                        ohne den Inhalt (DNS) zu lesen.
+                        <br>
+                        Header-Info:
+                        Das Paket ist an die IP deines DNS-Servers
+                        adressiert (oft die IP des Routers).
+                        Der Switch dient hier nur als Brücke.
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -118,7 +165,28 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: IP-Adresse gefunden!
+                        <br>
+                        Ziel-IP: 80.192.233.30
+                        Layer: 7 (Anwendung) & 3 (Netzwerk)
+                        Was passiert gerade?
+                        Der DNS-Server hat in seinem Telefonbuch
+                        nachgeschlagen. Er schickt die Antwort:
+                        "infoteam.de erreichst du unter der IP
+                        80.192.233.30."
+                        Der Rückweg:
+                        Die Antwort wandert als UDP-Paket zurück
+                        durch das Internet zu deinem Router und
+                        über den Switch direkt zu deinem PC.
+                        Wichtig für den PC:
+                        Erst jetzt kann dein Browser das echte
+                        Datenpaket (den HTTP-Request) schnüren,
+                        da er nun endlich die Ziel-IP kennt.
+                        Header-Info:
+                        Das Paket trägt nun die IP des DNS-Servers
+                        als Absender und deine IP als Ziel.
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -147,7 +215,36 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: Adress-Übersetzung (NAT)
+                        <br>
+                        <br>
+                        Gerät: Router (Standard-Gateway)
+                        <br>
+                        Layer: 3 (Netzwerk)
+                        <br>
+                        <br>
+                        Was passiert gerade?
+                        Dein PC hat eine private IP, die im Web
+                        nicht funktioniert. Der Router nutzt
+                        NAT (Network Address Translation).
+                        <br>
+                        Der Trick mit der Maske:
+                        Er ersetzt deine private Quell-IP durch
+                        seine eigene öffentliche IP. Er merkt
+                        sich genau, dass DU gefragt hast, um die
+                        Antwort später richtig zuzustellen.
+                        <br>
+                        Routing-Entscheidung:
+                        Der Router schaut in seine Tabelle:
+                        "Wo geht's zu 80.192.233.30?"
+                        Er schickt das Paket nun über das Modem
+                        hinaus auf die Reise durch das Internet.
+                        <br>
+                        Header-Info:
+                        Die Quell-IP im IP-Header ändert sich von
+                        lokal (z.B. 192.168.x.x) zu öffentlich.
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -174,7 +271,36 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: Paket-Hopping im weiten Netz
+                        <br>
+                        <br>
+                        Gefahr: Überlastung & Paketverlust
+                        Layer: 3 (Netzwerk) & 4 (Transport)
+                        <br>
+                        Was passiert gerade?
+                        Dein Paket springt von Router zu Router
+                        (Hops). Dabei ist es nicht allein:
+                        Millionen andere Pakete kämpfen um den
+                        schnellsten Weg zum Zielserver.
+                        <br>
+                        Gefahren auf der Strecke:
+                        Stau: Ein Router ist überlastet und
+                        wirft dein Paket einfach weg.
+                        Defekt: Ein Kabel wird beschädigt.
+                        Verlust: Das Paket kommt nie an.
+                        <br>
+                        Die Rettung durch TCP (L4):
+                        Keine Sorge! Wenn ein Paket verloren geht,
+                        merkt dein PC das (Timeout) und schickt
+                        es dank TCP einfach noch einmal. Das
+                        Internet vergisst nichts, es dauert nur.
+                        <br>
+                        Header-Info:
+                        Im IP-Header sinkt mit jedem Hop die
+                        TTL (Time to Live). Steht sie auf 0,
+                        wird das Paket gelöscht (Endlosschleife).
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -204,7 +330,36 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: Ziel erreicht! (Port 80)
+                        <br>
+                        <br>
+                        Gerät: Webserver (Host)
+                        <br>
+                        Layer: 4 (Transport) bis 7 (Anwendung)
+                        <br>
+                        Was passiert gerade?
+                        Der Server nimmt das Paket an. Er prüft
+                        im TCP-Header (Layer 4) den Port: 80.
+                        "Ah, eine Web-Anfrage! Das ist für meine
+                        Webserver-Software (z.B. Apache/Nginx)."
+                        <br>
+                        Das Auspacken (Decapsulation):
+                        Der Server entfernt die IP- und Ethernet-
+                        Hüllen. Übrig bleibt die reine HTTP-
+                        Anfrage: "Gib mir die Seite infoteam.de".
+                        <br>
+                        Die Antwort wird erstellt:
+                        Der Server sucht die Datei auf seiner
+                        Festplatte und bereitet die Antwort vor.
+                        Er packt die Webseite nun in neue
+                        Datenpakete für den Rückweg zu dir.
+                        <br>
+                        Header-Info:
+                        Ziel-Port ist 80 (Standard für HTTP).
+                        Der Server dreht Quell- und Ziel-IP nun
+                        einfach für die Antwort um.
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -226,7 +381,33 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: Sicherheitscheck läuft...
+                        <br>
+                        <br>
+                        Funktion: Zugriffskontrolle & Filter
+                        <br>
+                        Layer: 3, 4 oder sogar 7
+                        <br>
+                        Was passiert gerade?
+                        Jedes eingehende Paket wird geprüft. Die
+                        Firewall hat eine Liste mit Regeln:
+                        "Wer darf rein, wer muss draußen bleiben?"
+                        <br>
+                        Die Prüfkriterien:
+                        Port-Check: Port 80 (HTTP) ist für
+                        Besucher offen. Andere Türen bleiben zu.
+                        IP-Sperre: Bekannte Angreifer oder
+                        "böse" Regionen werden sofort blockiert.
+                        Deep Packet Inspection: Moderne
+                        Firewalls schauen sogar in den Inhalt,
+                        um Viren oder Schadcode zu finden.
+                        <br>
+                        Das Ergebnis:
+                        Ist das Paket sauber, darf es zum Server
+                        durchgehen. Falls nicht, wird es lautlos
+                        verworfen (Dropped) oder abgelehnt.
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -267,7 +448,7 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>Viren, Maleware oder Hacker werden in der Regel genau so abgewährt</p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -287,7 +468,36 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: Firewall-Check bestanden
+                        <br>
+                        <br>
+                        Funktion: Paketfilterung
+                        <br>
+                        Layer: 3 & 4 (Network & Transport)
+                        <br>
+                        Was passiert gerade?
+                        Bevor unser Paket den Server erreicht,
+                        muss es an der Firewall vorbei. Diese
+                        prüft: "Ist diese Anfrage erlaubt?"
+                        <br>
+                        Die Kontrolle:
+                        Die Firewall sieht im Header: Ziel-Port
+                        ist 80 (HTTP). Da dies der offizielle
+                        Eingang für Web-Besucher ist, sagt der
+                        digitale Türsteher: "Alles klar, geh rein!"
+                        <br>
+                        Warum ist das wichtig?
+                        Hätte unser Paket versucht, über einen
+                        geheimen Port (z.B. für Datenbanken) ein-
+                        zudringen, hätte die Firewall es sofort
+                        vernichtet, um den Server zu schützen.
+                        <br>
+                        Header-Info:
+                        Geprüft werden Ziel-IP, Ziel-Port und ob
+                        das Paket zu einer bekannten, sicheren
+                        Verbindung gehört.
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -330,7 +540,33 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>
+                        Status: Paket trifft am Router ein
+                        <br>
+                        <br>
+                        Gerät: Router & Switch
+                        <br>
+                        Layer: 3 & 2 (Netzwerk & Sicherung)
+                        <br>
+                        Was passiert gerade?
+                        Dein Router empfängt die Antwort von
+                        infoteam.de. Dank NAT weiß er noch:
+                        "Ah, das gehört zum PC im Arbeitszimmer!"
+                        Er tauscht die Ziel-IP wieder in deine
+                        lokale Adresse um.
+                        <br>
+                        Der Weg über den Switch:
+                        Der Router schickt das Paket zum Switch.
+                        Dieser schaut auf die MAC-Adresse (L2)
+                        und weiß genau, an welchem Port dein PC
+                        eingesteckt ist. Er leitet es direkt zu
+                        deiner Netzwerkkarte weiter.
+                        <br>
+                        Header-Info:
+                        Die öffentliche IP wird wieder durch
+                        deine private IP (z.B. 192.168.x.x)
+                        ersetzt, damit dein PC es annimmt.
+                    </p>
                 </div>
             </div>
             <img class="BG_Pic">
@@ -358,7 +594,7 @@
             <div class="info-box">
                 <button class="info-btn">?</button>
                 <div class="info-popup">
-                    <p>Hier stehen Infos zu dieser Folie.</p>
+                    <p>Jetzt zeigt dein Browser infoteam.de an</p>
                 </div>
             </div>
             <img class="BG_Pic">
