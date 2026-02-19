@@ -275,9 +275,38 @@ html, body
     bottom: 20%;
     left: 10%;
 }
+#T20
+{
+    font-size: 2.5em;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
 
+#T21
+{
+    font-size: 2.5em;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+}
 
+#T22
+{
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    font-size: 1.4em;
+    max-width: 30%;
+}
 
+#T23
+{
+    position: absolute;
+    right: 40%;
+    bottom: 15%;
+    max-width: 30%;
+}
 
 
 .infobit
@@ -322,7 +351,15 @@ html, body
     z-index: 5;
 }
 
-
+.infobit5
+{
+    padding-top: 35%;
+    padding-left: 15%;
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    z-index: 2;
+}
 
 
 .cpu_ripped
@@ -343,6 +380,16 @@ html, body
     position: absolute;
     top: 10%;
     right: 10%;
+    z-index: 5;
+}
+
+.router_ripped2
+{
+    width: 350px;
+    height: 540px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
     z-index: 5;
 }
 
@@ -664,7 +711,74 @@ html, body
     perspective: 1200px;
 }
 
+.Pfeil
+{
+    filter: invert(15%) sepia(51%) saturate(5583%) hue-rotate(353deg) brightness(90%) contrast(120%);
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    z-index: 5;
+    transform: rotate(30deg);
+    width: 80px;
+}
 
+.Pfeil2
+{
+    filter: invert(15%) sepia(51%) saturate(5583%) hue-rotate(353deg) brightness(90%) contrast(120%);
+    position: absolute;
+    right: 25%;
+    top: 15%;
+    z-index: 6;
+    transform: rotate(270deg);
+    width: 80px;
+}
+
+.switch_ripped2
+{
+    width: 350px;
+    height: 540px;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    z-index: 6;
+}
+
+#T22, #T23
+{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1.2s ease;
+}
+
+#click_on_S
+{
+    opacity: 0;
+    pointer-events:none;
+}
+
+#click_on_S.active
+{
+    opacity: 1;
+    pointer-events:auto;
+}
+
+.show
+{
+    opacity: 1 !important;
+    pointer-events: auto;
+}
+
+.infobitMove
+{
+    bottom: 5%;
+    left: 50%;
+    transition: all 2s ease;
+}
+
+.clicked
+{
+    transition: transform 0.5s;
+}
 
 
 
@@ -1401,5 +1515,132 @@ html, body
         z-index: 5;
         animation: sway_plane 3s ease-in-out infinite alternate;
     }
+
+    #T20
+    {
+        font-size: 1.1em;
+        position: absolute;
+        top: 12%;
+        left: 65%;
+        color: #BC0000;
+    }
+
+    #T21
+    {
+        font-size: 1.1em;
+        color: #BC0000;
+        position: absolute;
+        top: 46%;
+        right: 28%;
+    }
+
+    #T22
+    {
+        position: absolute;
+        color: #BC0000;
+        left: 60%;
+        top: 16%;
+        font-size: 0.8em;
+        max-width: 35%;
+    }
+
+    #T23
+    {
+        position: absolute;
+        color: #BC0000;
+        font-size: 0.8em;
+        right: 50%;
+        bottom: 30%;
+        max-width: 40%;
+    }
+
+    .infobit5
+    {
+        position: absolute;
+        width: 180px;
+        bottom: 20%;
+        left: 0%;
+        z-index: 2;
+    }
+    .router_ripped2
+    {
+        width: 220px;
+        height: 300px;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+        z-index: 5;
+    }
+    .Pfeil
+    {
+        filter: invert(15%) sepia(51%) saturate(5583%) hue-rotate(353deg) brightness(90%) contrast(120%);
+        position: absolute;
+        left: 55%;
+        top: 14%;
+        z-index: 5;
+        transform: rotate(30deg);
+        width: 24px;
+    }
+
+    .Pfeil2
+    {
+        filter: invert(15%) sepia(51%) saturate(5583%) hue-rotate(353deg) brightness(90%) contrast(120%);
+        position: absolute;
+        right: 18%;
+        top: 48%;
+        z-index: 6;
+        transform: rotate(290deg);
+        width: 24px;
+    }
+
+    .switch_ripped2
+    {
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        z-index: 6;
+    }
+
+    #T22, #T23
+    {
+        opacity: 0;
+        pointer-events: none;
+        transition: all 1.2s ease;
+    }
+
+    #click_on_S
+    {
+        opacity: 0;
+        pointer-events:none;
+    }
+
+    #click_on_S.active
+    {
+        opacity: 1;
+        pointer-events:auto;
+    }
+
+    .show
+    {
+        opacity: 1 !important;
+        pointer-events: auto;
+    }
+
+    .infobitMove
+    {
+        bottom: 20%;
+        left: 60%;
+        transition: all 2s ease;
+        visibility: collapse;
+    }
+
+    .clicked
+    {
+        transition: transform 0.5s;
+    }
+
+
 
 }

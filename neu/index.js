@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 function Skip_to_end()
 {
     document.querySelector('.slides').scrollTo({ top: document.querySelector('.slides').scrollHeight, behavior: 'smooth' })
