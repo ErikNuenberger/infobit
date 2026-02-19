@@ -17,10 +17,10 @@
             <h1 class="slide-title">Die Central Processing Unit</h1>
 
                 <p class="slide-text text-red" id="T1">
-                    Infobit, ich habe eine Aufgabe für dich: Ein Anwendermöchte die Website “infoteam.de” aufrufen. Reise für mich durch das Internet zu diesem Webserver und bring mir die Website, damit ich sie anzeigen kann!
+                    Infobit, ich habe eine Aufgabe für dich: Ein Anwender möchte die Website „infoteam.de“ aufrufen. Reise für mich durch das Internet zu diesem Webserver und bring mir die Website, damit ich sie anzeigen kann!
                 </p>
                 <p class="slide-text text-red" id="T2">
-                    Ich mach mich sofort auf den Weg!
+                    Ich mache mich sofort auf den Weg!
                 </p>
 
                 <img src="fig\infobit_einzeln.png" class="infobit">
@@ -28,9 +28,15 @@
 
                 <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
                 <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+                <div class="info-box">
+                    <button class="info-btn">?</button>
+                    <div class="info-popup">
+                        <p>Hier stehen Infos zu dieser Folie.</p>
+                    </div>
+                </div>
+
                 <img class="BG_Pic">
         </div>
-
 
         <div  class="slide">
             <h1 class="slide-title">Der Switch</h1>
@@ -52,7 +58,7 @@
 
                     <div class="flip-back">
                         <p class="slide-text text-black" id="T5">
-                            Der Switch ist eines der wichtigsten Netzwerkgeräte im Netzwerk. Er verbindet quasi jeden Rechner miteinander, damit die einzelnen Rechner untereinander Daten austauschen können
+                            Der Switch ist eines der wichtigsten Netzwerkgeräte. Er verbindet alle Rechner miteinander, damit diese untereinander Daten austauschen können.
                         </p>
                     </div>
                 </div>
@@ -61,20 +67,26 @@
             <img src="fig\infobit_einzeln.png" class="infobit2">
 
             <p class="slide-text text-black" id="T6">
-                Kannst du mir sagen wo es hier weitergeht, ich muss zum Webserver.
+                Kannst du mir sagen, wo es hier weitergeht? Ich muss zum Webserver.
+
             </p>
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-            
 
         <div  class="slide">
             <h1 class="slide-title">DNS-Server</h1>
 
             <p class="slide-text text-red" id="T7">
-                Du muss nach der 80.192.233.30 suchen. Am besten gehst du zum Router, er kann dich in das Internet leiten, wo du den Webserver findest.
+                Du musst nach der Adresse 80.192.233.30 suchen. Am besten gehst du zum Router. Er kann dich ins Internet leiten, wo du den Webserver findest.
             </p>
             
             <div class="flip-card2" onclick="this.classList.toggle('flipped')">
@@ -89,39 +101,42 @@
 
                     <div class="flip-back2">
                         <p class="slide-text text-black" id="T9">
-                            Von uns DNS-Server gibt es unzählig viele überall verteilt. Wir besitzen die Macht, jede öffentliche IP-Adresse zu kennen und jeden Websitenamen in die dazugehörige IP-Adresse umzuwandeln, damit wir jedes Bit an die richtige Adresse verweisen können!
+                            Von uns DNS-Servern gibt es unzählig viele, überall verteilt. Wir besitzen die Fähigkeit, jede öffentliche IP-Adresse zu kennen und jeden Websitenamen in die passende IP-Adresse umzuwandeln, damit jedes Datenpaket an die richtige Adresse gelangt!
                         </p>
                     </div>
                 </div>
             </div>
 
             <p class="slide-text text-black" id="T10">
-                Hallo Domain Name Server, weist du wie die IP-Adresse von “www.infoteam.de” lautet?
+                Hallo Domain Name Server, weißt du, wie die IP-Adresse von „www.infoteam.de“ lautet?
             </p>
 
             <img src="fig\infobit_einzeln.png" class="infobit3">
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-
-
-
 
         <div  class="slide">
             <h1 class="slide-title">Der Router</h1>
 
             <p class="slide-text text-red" id="T11">
-                Bist du der Router ?
+                Bist du der Router?
             </p>
 
             <p class="slide-text text-red" id="T12">
-                Ja der Router bin ich, du musst wissen, hier fungiere ich dir gegenüber als NAT-Router. Das heisst du kriegst von mir eine öffentliche Adresse für deinen Weg durch das Internet. Da hinten steht mein Flugzeug, dass kannst du für den Weg durch das Internet benutzen.
+                Ja, der Router bin ich. Du musst wissen: Hier fungiere ich dir gegenüber als NAT-Router. Das heißt, du bekommst von mir eine öffentliche Adresse für deinen Weg durch das Internet. Da hinten steht mein Flugzeug, das kannst du für deine Reise benutzen.
             </p>
 
             <p class="slide-text text-black" id="T13">
-                In welcher Richtung liegt die Adressse 80.192.233.30? Kannst du mir weiterhelfen?
+                In welcher Richtung liegt die Adresse 80.192.233.30? Kannst du mir weiterhelfen?
             </p>
             <img src="fig\Router_2.png" class="router_ripped">
             <img src="fig\infobit_einzeln.png" class="infobit4">
@@ -129,17 +144,20 @@
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-
-
-
 
         <div  class="slide">
             <h1 class="slide-title">Pakete</h1>
 
             <p class="slide-text text-red" id="T14">
-                Auf dem Weg durch das Internet lauern für das Infobit unzählige Gefahren. Da können Pakete verloren gehen, Pakete mit versteckter Schadsoftware geholt werden oder das Infobit kann sogar ganz verloren gehen! Doch meistens geht alles gut und das Infobit kommt an seinem Ziel an und wieder zurück.
+                Auf dem Weg durch das Internet lauern für Infobit unzählige Gefahren. Pakete können verloren gehen, manipuliert werden oder sogar ganz verschwinden! Doch meistens geht alles gut, und Infobit erreicht sein Ziel und kehrt wieder zurück.
             </p>
 
             <img src="fig\Metroid_big.png" id="Asteroid_big">
@@ -153,21 +171,24 @@
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-
-
-
 
         <div  class="slide">
             <h1 class="slide-title">Der Server</h1>
 
             <p class="slide-text text-red" id="T15">
-                Jeder PC, so auch ein Server hat unzählige sogenannte Ports. Jeder Port stellt andere Daten bereit, so sind beim Webserver auf Port 80 Daten für die Internetseite.
+                Jeder Computer — auch ein Server — besitzt viele sogenannte Ports. Jeder Port stellt unterschiedliche Daten bereit. Beim Webserver liegen zum Beispiel auf Port 80 die Daten für die Website.
             </p>
 
             <p class="slide-text text-red" id="T16">
-                Info: Klick auf den Brief zum Datenübertragen!
+                INFO: Klicke auf den Brief, um die Daten zu übertragen!
             </p>
 
             <p class="slide-text text-black" id="T17">
@@ -180,17 +201,20 @@
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-
-
-
 
         <div  class="slide">
             <h1 class="slide-title">Die Firewall</h1>
 
             <p class="slide-text text-red" id="T18">
-                Währendessen, an der Grenze zwischen Internet und Infoteam-Netzwerk versucht sich ein tapferes Virus seinen Weg hinein, in das Netzwerk zu bahnen doch ...
+                Währenddessen versucht an der Grenze zwischen Internet und Infoteam-Netzwerk ein tapferes Virus, sich seinen Weg ins Netzwerk zu bahnen, doch ...
             </p>
 
             <img src="fig\Firewall_as_RippedPaper.png" id="dragon">
@@ -199,17 +223,20 @@
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-
-
-
 
         <div  class="slide">
             <h1 class="slide-title">Die Firewall</h1>
 
             <p class="slide-text text-red" id="T18">
-                ... Es hat nicht mit der unaufhaltbaren Firewall gerechnet, die von einem findigen Sysadmin eingerichtet wurde, damit sie sämtlichen ungewollten Datentraffic unaufhaltsam abwehrt
+                ... es hat nicht mit der unaufhaltbaren Firewall gerechnet, die von einem findigen Systemadministrator eingerichtet wurde, um sämtlichen unerwünschten Datenverkehr zuverlässig abzuwehren.
             </p>
 
             <div class="mo-fire">
@@ -237,29 +264,34 @@
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-
-
-
 
         <div  class="slide">
             <h1 class="slide-title">Die Firewall</h1>
 
             <p class="slide-text text-red" id="T19">
-                Oh Weh! das sieht nicht gut aus für unser Infobit. Aber glücklicherweiße wurde die Firewall so konfiguriert, dass sie genau weiß, was aus dem Netzwerk kam und deswegen auch wieder mit den geholten Daten reindarf. Deswegen muss sich unser infobit keine Sorgen machen!
+                Oh weh! Das sieht nicht gut aus für unser Infobit. Aber glücklicherweise wurde die Firewall so konfiguriert, dass sie genau erkennt, was aus dem Netzwerk stammt, und deshalb auch mit den abgeholten Daten wieder hinein darf. Unser Infobit muss sich also keine Sorgen machen!
             </p>
             <img src="fig\Firewall_as_RippedPaper.png" id="dragon_static">
             <img src="fig\Flugzeug.png" id="plane2">
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
-
-
-
-
 
         <div  class="slide">
             <h1 class="slide-title">Der Switch</h1>
@@ -295,17 +327,21 @@
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
             <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
 
-
-
-
         <div  class="slide">
+
             <h1 class="slide-title">Das Ende</h1>
 
             <p class="slide-text text-red" id="T24">
-                Wieder am Ursprungsrechenr angekommen, übergibt das Infobit seine wertvolle Fracht der CPU, damit sie sie anzeigen kann.
+                Wieder am Ursprungsrechner angekommen, übergibt Infobit seine wertvolle Fracht an die CPU, damit diese sie anzeigen kann.
             </p>
 
             <p class="slide-text text-red" id="T25">
@@ -319,6 +355,12 @@
             
             <button id="skipBtn" onclick="Back()">Zurück auf Anfang</button>
             <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
+            <div class="info-box">
+                <button class="info-btn">?</button>
+                <div class="info-popup">
+                    <p>Hier stehen Infos zu dieser Folie.</p>
+                </div>
+            </div>
             <img class="BG_Pic">
         </div>
 

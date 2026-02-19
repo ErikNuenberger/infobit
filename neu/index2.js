@@ -34,3 +34,12 @@ switchEl.addEventListener("click", () =>
     arrows.forEach(el => el.style.display = "none");
     clicks.forEach(el => el.style.display = "none");
 });
+
+document.querySelectorAll(".info-btn").forEach(btn=>
+{
+    btn.addEventListener("click", e=>
+    {
+        const popup = btn.nextElementSibling;
+        popup.classList.toggle("active");
+    });
+});

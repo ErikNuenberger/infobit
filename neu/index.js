@@ -8,6 +8,8 @@ document.addEventListener("keydown", function(event)
     }
 });
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const slider = document.querySelector(".slides");
 

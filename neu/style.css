@@ -44,10 +44,10 @@ html, body
     align-items:center;
     text-align:center;
 
-    background-size:100% 100%;
-    background-position:center;
-    background-repeat:no-repeat;
-    position:relative;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .slide-title
@@ -108,6 +108,74 @@ html, body
 {
     background-image: url("img/Gelb2.png");
 }
+
+
+
+
+.info-box
+{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.info-btn
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: #222;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+    z-index: 500;
+}
+
+.info-btn:hover
+{
+    background: #555;
+}
+
+.info-popup
+{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 220px;
+    padding: 12px;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 14px;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-popup.active
+{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
@@ -929,7 +997,7 @@ html, body
     }
     100%
     {
-        transform: translateX(-125vw);
+        transform: translateX(-95vw);
     }
 }
 
@@ -1125,7 +1193,7 @@ html, body
         position: absolute;
         left: 50%;
         transform: rotate(2deg);
-        max-width: 100%;
+        width: 40%;
     }
     #T11
     {
