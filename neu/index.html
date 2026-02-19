@@ -27,6 +27,7 @@
                 <img src="fig\CPU_as_RippedPaper.png" class="cpu_ripped">
 
                 <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+                <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
                 <img class="BG_Pic">
         </div>
 
@@ -63,6 +64,8 @@
                 Kannst du mir sagen wo es hier weitergeht, ich muss zum Webserver.
             </p>
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
             
@@ -98,6 +101,8 @@
 
             <img src="fig\infobit_einzeln.png" class="infobit3">
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -122,6 +127,8 @@
             <img src="fig\infobit_einzeln.png" class="infobit4">
 
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -144,6 +151,8 @@
             <img src="fig\Flugzeug.png" id="plane">
 
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -169,6 +178,8 @@
             <img src="fig\envelope.png" id="letter" onclick="this.classList.add('fly'); document.getElementById('T17').classList.add('show');">
             <img src="fig\Flugzeug.png" id="plane_static">
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -186,6 +197,8 @@
             <img src="fig\Virus.png" id="virus">
 
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -222,6 +235,8 @@
             <img src="fig\Firewall_as_RippedPaper.png" id="dragon">
             <img src="fig\Virus_sad.png" id="virus2">
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -237,6 +252,8 @@
             <img src="fig\Firewall_as_RippedPaper.png" id="dragon_static">
             <img src="fig\Flugzeug.png" id="plane2">
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -276,6 +293,8 @@
             </p>
 
             <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <img src="fig/NextPageArrow.png" onclick="Next_Slide()" class="nxt">
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 
@@ -285,16 +304,21 @@
         <div  class="slide">
             <h1 class="slide-title">Das Ende</h1>
 
-            <p class="slide-text text-red">
+            <p class="slide-text text-red" id="T24">
                 Wieder am Ursprungsrechenr angekommen, übergibt das Infobit seine wertvolle Fracht der CPU, damit sie sie anzeigen kann.
             </p>
 
-            <p class="slide-text text-red">
+            <p class="slide-text text-red" id="T25">
                 Du kannst nun auf den Umschlag klicken!
             </p>
 
+            <img src="fig\infobit_einzeln.png" class="infobit6">
+            <img src="fig\CPU_as_RippedPaper.png" class="cpu_ripped2">
+            <a href="https://infoteam.de/" style="width: 200px; @media (max-width: 768px){width: 50px;}"><img src="fig\envelope.png" class="env2" style="width: 200px; @media (max-width: 768px){width: 50px;}"></a>
+
             
-            <button id="skipBtn" onclick="Skip_to_end()">Überspringen</button>
+            <button id="skipBtn" onclick="Back()">Zurück auf Anfang</button>
+            <img src="fig/NextPageArrow.png" onclick="Last_Slide()" class="lst">
             <img class="BG_Pic">
         </div>
 

@@ -26,5 +26,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function Skip_to_end()
 {
-    document.querySelector('.slides').scrollTo({ top: document.querySelector('.slides').scrollHeight, behavior: 'smooth' })
+    const slider = document.querySelector('.slides');
+
+    slider.scrollTo({left: slider.scrollWidth, behavior: 'smooth'});
+}
+
+function Back()
+{
+    const slider = document.querySelector('.slides');
+    slider.scrollTo({left: 0,behavior: 'smooth'});
+}
+
+
+
+
+function Next_Slide()
+{
+    const container = document.querySelector('.slides');
+    const slides = document.querySelectorAll('.slide');
+
+    const slideWidth = slides[0].offsetWidth;
+    const currentIndex = Math.round(container.scrollLeft / slideWidth);
+
+    if(currentIndex < slides.length - 1)
+    {
+        container.scrollTo({left: (currentIndex + 1) * slideWidth, behavior: "smooth"});
+    }
+}
+
+
+function Last_Slide()
+{
+    const container = document.querySelector('.slides');
+    const slides = document.querySelectorAll('.slide');
+
+    const slideWidth = slides[0].offsetWidth;
+    const currentIndex = Math.round(container.scrollLeft / slideWidth);
+
+    if(currentIndex > 0)
+    {
+        container.scrollTo({left: (currentIndex - 1) * slideWidth, behavior: "smooth"});
+    }
 }

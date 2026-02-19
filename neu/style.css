@@ -308,6 +308,21 @@ html, body
     max-width: 30%;
 }
 
+#T24
+{
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    max-width: 30%;
+}
+
+#T25
+{
+    position: absolute;
+    right: 45%;
+    top: 55%;
+}
+
 
 .infobit
 {
@@ -361,6 +376,17 @@ html, body
     z-index: 2;
 }
 
+.infobit6
+{
+    padding-top: 0%;
+    padding-left: 0%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 2;
+}
+
+
 
 .cpu_ripped
 {
@@ -372,6 +398,18 @@ html, body
     z-index: 5;
     animation: sway 3s ease-in-out infinite alternate;
 }
+
+
+.cpu_ripped2
+{
+    width: 400px;
+    height: 433px;
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+    z-index: 5;
+}
+
 
 .router_ripped
 {
@@ -963,6 +1001,33 @@ html, body
     transform: rotate(45deg) translateX(-250px, 200px);
 }
 
+.nxt
+{
+    width: 1.4%;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    z-index: 40;
+}
+
+.lst
+{
+    width: 1.4%;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 1%;
+    top: 50%;
+    z-index: 40;
+}
+
+.env2
+{
+    position: absolute;
+    width: 200px;
+    top: 45%;
+    right: 25%;
+    z-index: 6;
+}
 
 
 
@@ -1639,6 +1704,55 @@ html, body
     .clicked
     {
         transition: transform 0.5s;
+    }
+    .nxt
+    {
+        visibility: hidden;
+    }
+    .lst
+    {
+        visibility: hidden;
+    }
+    .infobit6
+    {
+        padding-top: 0%;
+        padding-left: 0%;
+        position: absolute;
+        top: 15%;
+        right: -20%;
+        z-index: 2;
+    }
+    .cpu_ripped2
+    {
+        width: 200px;
+        height: 220px;
+        position: absolute;
+        bottom: 20%;
+        right: 8%;
+        z-index: 5;
+    }
+    .env2
+    {
+        position: absolute;
+        width: 100px;
+        top: 45%;
+        right: 25%;
+        z-index: 6;
+    }
+    #T24
+    {
+        position: absolute;
+        right: 10%;
+        top: 15%;
+        max-width: 45%;
+        color: #BC0000;
+    }
+
+    #T25
+    {
+        position: absolute;
+        right: 20%;
+        top: 48%;
     }
 
 
